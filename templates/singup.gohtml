@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charest="utf-8">
+  </head>
+  <body>
+  <h1>Singin</h1>
+   <form method="post">
+   <input type="email" name="username" placeholder="username"> <br>
+   <input type="text" name="password" placeholder ="password"><br>
+   <input type="text" name="firstname" placeholder="firstname" ><br>
+   <input type="text" name="lastname" placeholder="last"><br>
+   <label for="sr">Role</label>
+   <select name="role" id="sr">
+      <option value="ADMIN" >ADMIN</option>
+      <option value="User" >User</option>
+      <option value="ProUSer">ProUSer</option>
+   </select>
+   <input type="submit"> 
+   </form>
+
+   {{if .First}}
+     {{.UserName}}
+     {{.First}}
+   {{end}}
+  </body>
+</html>
